@@ -12,10 +12,10 @@ nonce   = hex(random.randint(0,2**32-1))[2:].zfill(8)
 host    = 'solo.ckpool.org'
 port    = 3333
 
-while True==True:
+print("address:{} nonce:{}".format(address,nonce))
+print("host:{} port:{}".format(host,port))
 
-  print("address:{} nonce:{}".format(address,nonce))
-  print("host:{} port:{}".format(host,port))
+while True==True:
 
   sock    = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
   sock.connect((host,port))
